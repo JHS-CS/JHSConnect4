@@ -1,0 +1,63 @@
+package jhscs.connect4.gui;
+
+import jhscs.connect4.Main;
+import jhscs.connect4.game.Game;
+
+/**
+ * Tells the main program how to render the game
+ * should render:
+ *  - GameBoard
+ *  - ChatBox
+ *  - Menu's (if currently visible)
+ * @author Cameron White
+ *
+ */
+public class GUIManager {
+	private Game game;
+	
+	private int screenW;
+	private int screenH;
+	
+	public GUIManager(Game game,  int screenW, int screenH)
+	{
+		this.game = game;
+		this.screenW = screenW;
+		this.screenH = screenH;
+	}
+	
+	/**
+	 * show the GUI of the game
+	 *  - GameBoard
+	 *  - Chat box
+	 *  - Any menus (if showing)
+	 */
+	public void show(Main renderer)
+	{
+		
+	}
+
+	public int getScreenW() {
+		return screenW;
+	}
+
+	public void setScreenW(int screenW) {
+		this.screenW = screenW;
+	}
+
+	public int getScreenH() {
+		return screenH;
+	}
+
+	public void setScreenH(int screenH) {
+		this.screenH = screenH;
+	}
+
+	public Game getGame() {
+		return game;
+	}
+
+	public void setGame(Game game) {
+		this.game = game;
+	}
+	
+}
